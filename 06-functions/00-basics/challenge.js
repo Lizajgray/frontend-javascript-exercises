@@ -1,3 +1,7 @@
-module.exports.helloWorld = undefined;
+module.exports.helloWorld = function(name)
+return name	
+
+
+
 
 module.exports.multiply = undefined;
