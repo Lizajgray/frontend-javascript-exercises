@@ -1,6 +1,6 @@
 module.exports.inBetween = function(lower, middle, upper) {
 return middle < upper && middle > lower; 
-  
+
 };
 
 
