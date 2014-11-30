@@ -1,5 +1,29 @@
-module.exports.copy = undefined;
+module.exports.copy = function (object) {
+var newObject = {};
+for (key in object) {
+	newObject[key] = object[key];
+}
+return newObject;
+};
 
-module.exports.extend = undefined;
+module.exports.extend = function (propOne, propTwo) {
+	  var keys = Object.keys(propTwo);
 
-module.exports.hasElems = undefined;
+  for (var i = 0; i < keys.length; i++) {
+    propOne[keys[i]] = propTwo[keys[i]];
+  }
+
+  return propOne;
+};
+
+module.exports.hasElems = function (obj, array) {
+  var returnKeys = true;
+
+  for (var i = 0; i < array.length; i++) {
+    if (! obj.hasOwnProperty(array[i])) {
+      returnKeys = false;
+    }
+  }
+
+  return returnKeys;
+};

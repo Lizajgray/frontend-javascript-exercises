@@ -24,7 +24,7 @@
 
 - Complete the `addIndex` function. This function should:
     - create and return a new array of all inputs as strings
-    - each of the new strings should start with "[index] is [data element at index]"
+    - each of the new strings should start with "[index] is [element at index]"
 
     For example:
     
